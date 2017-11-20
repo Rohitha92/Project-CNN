@@ -19,9 +19,6 @@ with graph.as_default():
     num_channels = 1  # grayscale
     num_steps = 500
 
-    #tf graph input
-    #tf_train_dataset = tf.placeholder(tf.float32, shape=(batch_size, image_size, image_size, num_channels))
-    #tf_train_labels = tf.placeholder(tf.float32, shape=(batch_size, num_labels))
     tf_valid_dataset = tf.placeholder(tf.float32, shape=(1, image_size, image_size, num_channels))
 
     #define cnn architecture blocks
@@ -78,14 +75,7 @@ with graph.as_default():
         h_fc1_drop = tf.nn.dropout(h_fc1, dropout)
         out = tf.add(tf.matmul(h_fc1_drop, weights['w4']), biases['b4'])
         return out
-
-    #logits = network(tf_train_dataset)
-    #train_prediction = tf.nn.softmax(logits)
     valid_prediction = tf.nn.softmax(network(tf_valid_dataset))
-    #loss= tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels= tf_train_labels))
-    #optimizer = tf.train.GradientDescentOptimizer(0.5).minimize(loss)
-    #optimizer= tf.train.AdamOptimizer(learning_rate).minimize(loss)
-
 
     init = tf.global_variables_initializer()
     answer = None
@@ -100,7 +90,7 @@ with graph.as_default():
             image_data = np.expand_dims(np.expand_dims(image_data, 0), -1)
             predictions = sess.run(valid_prediction, feed_dict={tf_valid_dataset: image_data})
             predictions = np.squeeze(predictions)
-            top_k = predictions.argsort()[-5:][::-1]  # Getting top 5 predictions
+            top_k = predictions.argsort()[-2:][::-1]  # Getting top 2 predictions
             f = open(labelsFullPath, 'rb')
             lines = f.readlines()
             labels = [str(w).replace("\n", "") for w in lines]
