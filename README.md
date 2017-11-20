@@ -10,6 +10,7 @@ The data is stored in .mat file
    - Change paths in the program accordingly before executing
    - Checkpoints folder consists of trained model
 ### Dataset Credits:
-    -Olga Russakovsky*, Jia Deng*, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya
+    - Olga Russakovsky*, Jia Deng*, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya
     Khosla, Michael Bernstein, Alexander C. Berg and Li Fei-Fei. (* = equal contribution) ImageNet Large Scale Visual Recognition
-    Challenge. IJCV, 2015.
+    Challenge. IJCV, 2015
+    - Gary Thung, Dataset of garbage images, https://github.com/garythung/trashnet
