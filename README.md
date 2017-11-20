@@ -6,7 +6,7 @@ The data is stored in .mat file
    - Tensorflow 0.10, numpy, scipy, sklearn
 ## Script Initilatization
    - Run Train.py for training the network.
-   - Run test_images.py for testing the trained network on new images in a folder. Sample new images are provided.
+   - Run test_images.py for testing the trained network on new images in a folder. Sample test images are provided.
    - Change paths in the program accordingly before executing
    - Checkpoints folder consists of trained model
 ### Dataset Credits:
