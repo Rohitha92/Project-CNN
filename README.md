@@ -1,6 +1,6 @@
 # Project-CNN
-This Project is Convolutional Neural Network based Image Classification, aiming at classifying 3 classes - glass bottle, plastic bottle and tin/aluminium bottle. <\br>
-The dataset consists of 1800 images (600 in each class), 300 validation images and 300 test images. <\br>
+This Project is Convolutional Neural Network based Image Classification, aiming at classifying 3 classes - glass bottle, plastic bottle and tin/aluminium bottle. <br />
+The dataset consists of 1800 images (600 in each class), 300 validation images and 300 test images. <br />
 The data is stored in .mat file
 ## Requirements
    - Tensorflow 0.10, numpy, scipy, sklearn
