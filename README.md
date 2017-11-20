@@ -9,8 +9,7 @@ The data is stored in .mat file
    - Run test_images.py for testing the trained network on new images in a folder. Sample new images are provided.
    - Change paths in the program accordingly before executing
    - Checkpoints folder consists of trained model
-## Dataset Credits:
-   -Olga Russakovsky*, Jia Deng*, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya
-   Khosla, Michael Bernstein, Alexander C. Berg and Li Fei-Fei. (* = equal contribution) ImageNet Large Scale Visual Recognition
-   Challenge. IJCV, 2015
-   -
+### Dataset Credits:
+    -Olga Russakovsky*, Jia Deng*, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya
+    Khosla, Michael Bernstein, Alexander C. Berg and Li Fei-Fei. (* = equal contribution) ImageNet Large Scale Visual Recognition
+    Challenge. IJCV, 2015.
